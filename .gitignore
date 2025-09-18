@@ -1,0 +1,45 @@
+# Unreal Engine standard ignores
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+*.sln
+*.suo
+*.user
+*.userprefs
+*.opensdf
+*.sdf
+*.cache
+*.log
+*.pdb
+*.db
+
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore IntelliSense database
+*.ipch
+
+# Ignore build output
+[Bb]in/
+[Oo]bj/
+
+# Ignore temporary files
+*.log
+*.tmp
+*.cache
+
+
+# JetBrains Rider IDE project files
+.idea/
+*.iml
+
+
+# System files
+.DS_Store
+Thumbs.db
