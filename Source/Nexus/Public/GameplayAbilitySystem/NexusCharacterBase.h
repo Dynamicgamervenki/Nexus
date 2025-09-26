@@ -17,8 +17,12 @@ public:
 	ANexusCharacterBase();
 
 	//Ability System Component
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitiySystem")
 	UAbilitySystemComponent* AbilitySystemComponent;
+
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category = "AbilitiySystem")
+	class UBasicAttributeSet* BasicAttributeSet;
+	
 
 protected:
 	virtual void BeginPlay() override;

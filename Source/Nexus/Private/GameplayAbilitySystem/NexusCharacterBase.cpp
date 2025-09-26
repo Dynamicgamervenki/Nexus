@@ -1,7 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "NexusCharacterBase.h"
+#include "GameplayAbilitySystem/NexusCharacterBase.h"
+#include "AttributeSets/BasicAttributeSet.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 ANexusCharacterBase::ANexusCharacterBase()
@@ -27,6 +28,9 @@ ANexusCharacterBase::ANexusCharacterBase()
 	GetCharacterMovement()->MinAnalogWalkSpeed = 20.f;
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
 	GetCharacterMovement()->BrakingDecelerationFalling = 1500.f;
+
+	//Add the basic attribute set
+	BasicAttributeSet = CreateDefaultSubobject<UBasicAttributeSet>(TEXT("BasicAttributeSet"));
 }
 
 void ANexusCharacterBase::BeginPlay()
